@@ -1,0 +1,8 @@
+<h3>Way 2: Intercept input property changes with a setter</h3>
+
+<h4>There are total {{players.length}} names</h4>
+
+<app-validnameschild *ngFor="let player of players"
+[name] = "player"
+></app-validnameschild>
+

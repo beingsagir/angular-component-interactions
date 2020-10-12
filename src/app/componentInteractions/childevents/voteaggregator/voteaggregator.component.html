@@ -1,0 +1,10 @@
+<h3>Way 4: Parent listens for child event</h3>
+
+
+<h5>Is the world under good leadership ?</h5>
+<h5>Agree: {{agreed}}, Disagree: {{disagreed}}</h5>
+
+<app-voteboxchild *ngFor="let voter of voters"
+    [name] = "voter"
+    (voted)="voteplease($event)"
+></app-voteboxchild>

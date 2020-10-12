@@ -1,0 +1,9 @@
+<h3>Way 1: Passing data from parent to child with input binding</h3>
+
+
+<h5>{{parent}} has {{players.length}} Children</h5>
+
+<app-playersaschildren *ngFor = "let player of players"
+    [parent] = "parent"
+    [child] = "player"
+></app-playersaschildren>

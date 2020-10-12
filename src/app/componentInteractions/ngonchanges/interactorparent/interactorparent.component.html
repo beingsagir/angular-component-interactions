@@ -1,0 +1,9 @@
+<h3>Way 3: Intercept input property changes with ngOnChanges()</h3>
+
+<button (click)="newFootballMatch()">Start a football match</button>
+<button (click)="newCricketMatch()">Start a cricket match</button>
+
+<app-counterchild
+    [football] = 'football'
+    [cricket] = 'cricket'
+></app-counterchild>
